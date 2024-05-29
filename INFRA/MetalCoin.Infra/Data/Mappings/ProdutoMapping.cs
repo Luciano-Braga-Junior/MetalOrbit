@@ -28,6 +28,9 @@ namespace MetalCoin.Infra.Data.Mappings
                 .HasColumnType("bit")
                 .IsRequired();
 
+            //Criação do relacionamento 1 para 1
+            builder.HasOne(c => c.Categoria)
+                .WithOne(p => p.Produto);
         }
     }
 }

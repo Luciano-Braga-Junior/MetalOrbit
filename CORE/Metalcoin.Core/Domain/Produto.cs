@@ -13,6 +13,11 @@ namespace Metalcoin.Core.Domain
         /* EF Relation */
         public Guid FornecedorId { get; set; }
         public Fornecedor Fornecedor { get; set; }
+        
+        /* EF Relation Um produto para uma categoria*/
+
+        public Guid CategoriaId { get; set; }
+        public Categoria Categoria { get; set;}
 
     }
 }
