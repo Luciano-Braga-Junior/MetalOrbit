@@ -11,20 +11,30 @@ O sistema possui dois perfis de usuários distintos:
 
 - Atualização de Pedidos: Gerenciamento e atualização do status dos pedidos realizados pelos usuários comuns.
 
-2 - Cliente (Funcionários)
+#### 2 - Cliente (Funcionários)
 
-Navegação: Acesso para explorar os produtos e serviços disponíveis no e-commerce.
-Compra: Realizar compras utilizando MetalCoins, com necessidade de autenticação.
-Acompanhamento de Pedidos: Visualização e acompanhamento do status dos pedidos realizados, com necessidade de autenticação.
-Conta Corrente: Cada usuário terá uma única conta corrente onde será registrada a movimentação de MetalCoins, incluindo transações de crédito e débito, com identificação da transação, número da conta, data de atualização e saldo.
+- Navegação: Acesso para explorar os produtos e serviços disponíveis no e-commerce.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+- Compra: Realizar compras utilizando MetalCoins, com necessidade de autenticação.
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+- Acompanhamento de Pedidos: Visualização e acompanhamento do status dos pedidos realizados, com necessidade de autenticação.
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+- Conta Corrente: Cada usuário terá uma única conta corrente onde será registrada a movimentação de MetalCoins, incluindo transações de crédito e débito, com identificação da transação, número da conta, data de atualização e saldo.
+
+### Funcionalidades Gerais
+
+- MetalCoins: Cada novo usuário comum recebe 100 MetalCoins ao criar a conta.
+
+- Transações: Todas as transações na conta corrente são registradas, e o saldo é atualizado automaticamente a cada nova transação.
+
+- Autenticação: Ações como compra e acompanhamento de pedidos requerem que o usuário esteja autenticado.
+
+### Tecnologias Utilizadas
+
+- Frontend: React.js
+
+- Backend: Node.js com Express
+
+- Banco de Dados: MongoDB
+
+- Autenticação: JWT (JSON Web Tokens)
